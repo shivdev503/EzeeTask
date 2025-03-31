@@ -29,19 +29,19 @@ const Counter = () => {
       <div className="container">
         <div className="counter_box">
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-4">
               <div className="counter_item">
                 <h2>{rating.toFixed(1)}</h2>
                 <p>Service Rating</p>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-4">
               <div className="counter_item">
                 <h2>{customers.toLocaleString()}+</h2>
                 <p>Customer Globally</p>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-4">
               <div className="counter_item">
                 <h2>{projects.toLocaleString()}+</h2>
                 <p>B2B Projects</p>

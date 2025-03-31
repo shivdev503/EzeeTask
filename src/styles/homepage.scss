@@ -191,3 +191,123 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .herohome {
+    background-image: none;
+    background: $gradient;
+    height: 612px;
+    .banner_search {
+      padding-top: 72px;
+      h1 {
+        font-size: 26px;
+      }
+    }
+    .city_box {
+      flex-wrap: nowrap;
+      gap: 20px;
+      overflow-x: auto;
+      .city-item {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+    .content_box2 {
+      width: 100%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      .search-box {
+        flex-wrap: wrap;
+        gap: 15px;
+        .form-select {
+          width: 100%;
+          margin-right: 0 !important;
+          font-size: 12px;
+        }
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .services {
+    margin-top: 0;
+    .box {
+      .service_box {
+        width: 140px;
+        .icon {
+          width: 56px;
+          height: 65px;
+        }
+        h4 {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .counter {
+    padding: 50px 0 20px;
+    .counter_box {
+      padding: 20px;
+      border-radius: 10px;
+      .counter_item {
+        h2 {
+          font-size: 26px;
+        }
+        p {
+          font-size: 12px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .services_overview {
+    padding: 50px 0;
+    .overview_img {
+      height: 195px;
+    }
+  }
+  .how_to_start {
+    padding: 50px 0;
+    .steps {
+      display: none;
+    }
+    .step {
+      padding: 10px;
+      border: 1px solid rgba(33, 37, 41, 0.1);
+      border-radius: 14px;
+      box-shadow: 0 0 12px -5px rgba(0, 0, 0, 0.1);
+      min-height: 183px;
+      height: 100%;
+      h3 {
+        font-size: 60px;
+        font-weight: 700;
+        color: $heading-color;
+        opacity: 0.2;
+      }
+      h4 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 18px;
+      }
+      .icon {
+        position: relative;
+        width: 80%;
+        height: 200px;
+        margin: auto;
+      }
+    }
+    .step2 {
+      min-height: 0;
+      padding: 10px;
+      h3 {
+        font-size: 40px;
+        margin-bottom: 0;
+      }
+      h4 {
+        margin-top: 0;
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@ const ServiceOverviewCard = () => {
   return (
     <section className="services_overview">
       <div className="container">
-        <div className="row">
+        <div className="row overflow_row">
           <div className="col-md-4">
             <div className="overview_img">
               <Image
