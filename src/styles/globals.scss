@@ -69,3 +69,29 @@ a {
     color: $primary-color;
   }
 }
+
+.desk_hide {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .mob_hide {
+    display: none;
+  }
+  .desk_hide {
+    display: block;
+  }
+  .primary_btn {
+    font-size: 12px;
+  }
+  .heading {
+    font-size: 24px;
+  }
+  .overflow_row {
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
