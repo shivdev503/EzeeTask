@@ -150,3 +150,44 @@
     }
   }
 }
+
+.how_to_start {
+  padding: 100px 0;
+  background-color: $background-color;
+  .steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .step {
+      width: 19%;
+      padding: 20px;
+      border: 1px solid rgba(33, 37, 41, 0.1);
+      border-radius: 14px;
+      box-shadow: 0 0 12px -5px rgba(0, 0, 0, 0.1);
+      min-height: 183px;
+      h3 {
+        font-size: 60px;
+        font-weight: 700;
+        color: $heading-color;
+        opacity: 0.2;
+      }
+      h4 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 18px;
+      }
+      .icon {
+        position: relative;
+        width: 80%;
+        height: 200px;
+        margin: auto;
+      }
+    }
+    .step:nth-child(even) {
+      background-color: #f3f4f6;
+    }
+    .step:nth-child(odd) {
+      background-color: #fff;
+    }
+  }
+}
