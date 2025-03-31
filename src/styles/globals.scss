@@ -60,3 +60,12 @@ a {
     border: 2px solid $secondary-color;
   }
 }
+
+.heading {
+  font-size: 34px;
+  font-weight: 600;
+  color: $heading-color;
+  span {
+    color: $primary-color;
+  }
+}

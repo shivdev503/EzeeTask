@@ -4,6 +4,7 @@ import Herohome from "./Herohome";
 import Services from "./Services";
 import ServiceOverviewCard from "./ServiceOverviewCard";
 import Counter from "./Counter";
+import HowToStart from "./HowToStart";
 
 const Homepage = () => {
   return (
@@ -12,6 +13,7 @@ const Homepage = () => {
       <Services />
       <Counter />
       <ServiceOverviewCard />
+      <HowToStart />
     </>
   );
 };
