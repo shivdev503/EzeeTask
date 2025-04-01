@@ -5,6 +5,7 @@ import "../../../styles/navbar.scss";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { CgMenuRight } from "react-icons/cg";
+import ModalContactForm from "../home/ModalContactForm";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -56,7 +57,8 @@ const Navbar = () => {
             </li>
           </ul>
           <div>
-            <button className="primary_btn">Request Call Back</button>
+            {/* <button className="primary_btn">Request Call Back</button> */}
+            <ModalContactForm />
           </div>
         </div>
       </div>

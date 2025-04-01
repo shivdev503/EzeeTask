@@ -1,4 +1,4 @@
-export const services = [
+export const SERVICES = [
   {
     id: 0,
     serviceName: "Pre Purchase Inspection",
@@ -49,4 +49,13 @@ export const services = [
     serviceName: "bathroom renovation",
     icon: "/icons/bathroom-renovation.png",
   },
+];
+
+export const CITIES = [
+  { id: 0, name: "Gurugram", icon: "/images/gurugram.png" },
+  { id: 1, name: "Delhi", icon: "/images/delhi.png" },
+  { id: 2, name: "Ghaziabad", icon: "/images/ghaziabad.png" },
+  { id: 3, name: "Faridabad", icon: "/images/faridabad.png" },
+  { id: 4, name: "Chandigarh", icon: "/images/chandigarh.png" },
+  { id: 5, name: "Noida", icon: "/images/noida.png" },
 ];
