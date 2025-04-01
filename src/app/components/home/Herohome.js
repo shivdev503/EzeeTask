@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { CITIES, SERVICES } from "@/app/utils/constants";
 
 const Herohome = () => {
   return (
@@ -16,24 +17,17 @@ const Herohome = () => {
               </h1>
               <div className="inner_content_box mob_hide">
                 <div className="city_box d-flex justify-content-between flex-wrap mt-4">
-                  {[
-                    "Gurugram",
-                    "Delhi",
-                    "Ghaziabad",
-                    "Faridabad",
-                    "Chandigarh",
-                    "Noida",
-                  ].map((city, index) => (
-                    <div key={index} className="city-item text-center">
+                  {CITIES.map((city) => (
+                    <div key={city.id} className="city-item text-center">
                       <div className="city-icon">
                         <Image
-                          src={"/images/city-icon.png"}
-                          alt={city}
+                          src={city.icon}
+                          alt={city.name}
                           width={40}
                           height={40}
                         />
                       </div>
-                      <p>{city}</p>
+                      <p>{city.name}</p>
                     </div>
                   ))}
                 </div>
@@ -54,9 +48,19 @@ const Herohome = () => {
                   <div className="search-box d-flex justify-content-center">
                     <select className="form-select me-4">
                       <option>What are you looking for?</option>
+                      {SERVICES.map((service) => (
+                        <option key={service.id} value={service.serviceName}>
+                          {service.serviceName}
+                        </option>
+                      ))}
                     </select>
                     <select className="form-select me-4">
                       <option>Select city</option>
+                      {CITIES.map((city) => (
+                        <option key={city.id} value={city.name}>
+                          {city.name}
+                        </option>
+                      ))}
                     </select>
                     <button className="primary_btn">Search your space</button>
                   </div>
@@ -64,24 +68,17 @@ const Herohome = () => {
               </div>
               <div className="desk_hide">
                 <div className="city_box d-flex justify-content-between mt-4">
-                  {[
-                    "Gurugram",
-                    "Delhi",
-                    "Ghaziabad",
-                    "Faridabad",
-                    "Chandigarh",
-                    "Noida",
-                  ].map((city, index) => (
-                    <div key={index} className="city-item text-center">
+                  {CITIES.map((city) => (
+                    <div key={city.id} className="city-item text-center">
                       <div className="city-icon">
                         <Image
-                          src={"/images/city-icon.png"}
-                          alt={city}
+                          src={city.icon}
+                          alt={city.name}
                           width={40}
                           height={40}
                         />
                       </div>
-                      <p>{city}</p>
+                      <p>{city.name}</p>
                     </div>
                   ))}
                 </div>
