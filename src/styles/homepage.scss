@@ -64,24 +64,33 @@
       height: 100%;
       justify-content: space-evenly;
       margin-top: 70px;
-    }
-  }
-
-  .search-box {
-    .form-select {
-      width: 260px;
-      padding: 10px;
-    }
-
-    .btn-primary {
-      background-color: $primary-color;
-      border: none;
-      padding: 10px 15px;
+      .services {
+        width: 100%;
+        display: flex;
+        white-space: nowrap;
+        overflow-x: auto;
+        gap: 15px;
+        margin-top: 0;
+        padding: 0;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        .chip {
+          background-color: #fff;
+          border: 1px solid rgba(33, 37, 41, 0.1);
+          border-radius: 4px;
+          box-shadow: 0 0 12px -5px rgba(0, 0, 0, 0.1);
+          padding: 8px 10px;
+          font-size: 15px;
+          font-weight: 500;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
 .services {
-  margin-top: -50px;
+  margin-top: 0;
   padding: 10px 0;
   .box {
     display: flex;

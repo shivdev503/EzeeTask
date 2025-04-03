@@ -39,7 +39,7 @@ const Navbar = () => {
           <CgMenuRight />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+          {/* <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             <li className="nav-item mx-2">
               <Link className="nav-link" href="/repair-and-improve">
                 Repair & Improve
@@ -55,9 +55,8 @@ const Navbar = () => {
                 Join Our Pro Network
               </Link>
             </li>
-          </ul>
+          </ul> */}
           <div>
-            {/* <button className="primary_btn">Request Call Back</button> */}
             <ModalContactForm />
           </div>
         </div>

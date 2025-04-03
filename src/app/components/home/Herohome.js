@@ -32,7 +32,7 @@ const Herohome = () => {
                   ))}
                 </div>
                 <div className="content_box2">
-                  <div className="search-box d-flex justify-content-center">
+                  {/* <div className="search-box d-flex justify-content-center">
                     <select className="form-select me-4">
                       <option>What are you looking for?</option>
                     </select>
@@ -40,6 +40,13 @@ const Herohome = () => {
                       <option>Select city</option>
                     </select>
                     <button className="primary_btn">Search your space</button>
+                  </div> */}
+                  <div className="services">
+                    {SERVICES.map((service) => (
+                      <div className="chip" key={service.id}>
+                        <p className="mb-0">{service.serviceName}</p>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
