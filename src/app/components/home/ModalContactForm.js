@@ -1,3 +1,4 @@
+import { SERVICES } from "@/app/utils/constants";
 import React from "react";
 
 const ModalContactForm = () => {
@@ -81,6 +82,16 @@ const ModalContactForm = () => {
                           {brandNameError}
                         </p>
                       )} */}
+                    </div>
+                    <div className="col-12 mt-3">
+                      <select className="form-select">
+                        <option>What are you looking for?</option>
+                        {SERVICES.map((service) => (
+                          <option key={service.id} value={service.serviceName}>
+                            {service.serviceName}
+                          </option>
+                        ))}
+                      </select>
                     </div>
                     <div className="col-12">
                       <button
