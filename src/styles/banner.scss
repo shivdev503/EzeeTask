@@ -3,6 +3,7 @@
 .page-container {
   min-height: 100vh;
   background-color: #ffffff;
+
   .service-cards {
     display: grid;
     gap: 2rem;
@@ -20,18 +21,30 @@
       text-align: left;
       width: 100%;
       cursor: pointer;
+
       &:hover {
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
         border-color: #3b82f6;
         transform: scale(1.1);
       }
+
       .card-title {
         color: $heading-color;
       }
+
       .list {
         p {
+          background-color: #dbeafe;
+          display: flex;
+          align-items: center;
+          transition: background-color 0.3s ease;
+          padding: 10px 11px;
+          border-radius: 11px;
+          width: auto;
           color: $heading-color;
           font-size: 17px;
+          font-weight: 500;
+
           .icon {
             margin-right: 7px;
             font-size: 30px;
@@ -59,11 +72,9 @@ a {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(17, 24, 39, 0.9),
-    rgba(30, 58, 138, 0.9)
-  );
+  background: linear-gradient(to right,
+      rgba(17, 24, 39, 0.9),
+      rgba(30, 58, 138, 0.9));
 }
 
 .hero-image {
@@ -87,6 +98,47 @@ a {
   }
 }
 
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 26px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .hero-subtitle {
+    font-size: 16px !important;
+  }
+
+  .features-title {
+    font-size: 26px !important;
+  }
+
+  .features-description {
+    font-size: 16px;
+  }
+
+  .page-container .service-cards .service-card {
+    .card-icon {
+      width: 2rem !important;
+      height: 2rem !important;
+    }
+    .card-description {
+      display: none !important;
+    }
+    .list {
+      display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    p {
+      padding: 8px 8px;
+      font-size: 14px;
+    }
+    }
+    .card-title {
+      font-size: 20px !important;
+    }
+  }
+}
+
 @media (min-width: 1024px) {
   .hero-content {
     padding-left: 2rem;
@@ -96,7 +148,7 @@ a {
 
 .hero-text {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 .hero-title {

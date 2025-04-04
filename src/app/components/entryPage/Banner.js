@@ -101,7 +101,7 @@ const Banner = () => {
             >
               <div className="d-flex align-items-center">
                 <FiHome className="card-icon" />
-                <h2 className="card-title ms-3">Home Services</h2>
+                <h2 className="card-title ms-3">Residential Services</h2>
               </div>
               <p className="card-description">
                 Professional renovation and repair services for your home
