@@ -3,13 +3,13 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import "../../../styles/navbar.scss";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 import { CgMenuRight } from "react-icons/cg";
 import ModalContactForm from "../home/ModalContactForm";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const pathname = usePathname();
+  // const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,14 +19,15 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <nav
       className={`navbar navbar-expand-lg ${isScrolled ? "scrolled_nav" : ""}`}
     >
       <div className="container">
-        <a className="navbar-brand" href="/">
+        <Link className="navbar-brand" href="/">
           <Image src={"/images/brand-logo.png"} alt="ezee task" layout="fill" />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -57,7 +58,7 @@ const Navbar = () => {
             </li>
           </ul> */}
           <div>
-            <ModalContactForm />
+            <ModalContactForm btnText={"Request Call Back"} />
           </div>
         </div>
       </div>

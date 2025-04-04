@@ -150,6 +150,10 @@ a {
       border: 1px solid #d9d5d5;
       width: 100%;
       box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+      color: #0a0a0a;
+      &:focus {
+        outline: none;
+      }
     }
   }
 }
