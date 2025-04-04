@@ -1,6 +1,8 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import { CITIES, SERVICES } from "@/app/utils/constants";
+import ModalContactForm from "./ModalContactForm";
 
 const Herohome = () => {
   return (
@@ -43,9 +45,14 @@ const Herohome = () => {
                   </div> */}
                   <div className="services">
                     {SERVICES.map((service) => (
-                      <div className="chip" key={service.id}>
-                        <p className="mb-0">{service.serviceName}</p>
-                      </div>
+                      <ModalContactForm
+                        btnText={service.serviceName}
+                        key={service.id}
+                        className="chip"
+                      />
+                      // <div className="chip" key={service.id}>
+                      //   <p className="mb-0">{service.serviceName}</p>
+                      // </div>
                     ))}
                   </div>
                 </div>

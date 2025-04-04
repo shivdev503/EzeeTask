@@ -1,16 +1,16 @@
+"use client";
 import { SERVICES } from "@/app/utils/constants";
-import React from "react";
 
-const ModalContactForm = () => {
+const ModalContactForm = ({ btnText, className }) => {
   return (
     <>
       <button
         type="button"
-        className="primary_btn"
+        className={className ? className : "primary_btn"}
         data-bs-toggle="modal"
         data-bs-target={"#exampleModal"}
       >
-        Request Call Back
+        {btnText}
       </button>
 
       <div

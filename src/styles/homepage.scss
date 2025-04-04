@@ -83,7 +83,12 @@
           padding: 8px 10px;
           font-size: 15px;
           font-weight: 500;
+          color: $heading-color;
           cursor: pointer;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            background-color: $background-color;
+          }
         }
       }
     }
@@ -129,6 +134,15 @@
   }
 }
 
+.form-select {
+  padding: 10px !important;
+  color: #888888 !important;
+  cursor: pointer;
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
 .services_overview {
   padding: 100px 0;
   .overview_img {
