@@ -24,7 +24,7 @@ const Navbar = () => {
       className={`navbar navbar-expand-lg ${isScrolled ? "scrolled_nav" : ""}`}
     >
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           <Image src={"/images/brand-logo.png"} alt="ezee task" layout="fill" />
         </a>
         <button
