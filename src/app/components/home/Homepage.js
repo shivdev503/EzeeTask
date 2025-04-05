@@ -5,6 +5,7 @@ import Services from "./Services";
 import ServiceOverviewCard from "./ServiceOverviewCard";
 import Counter from "./Counter";
 import HowToStart from "./HowToStart";
+import Testimonials from "./Testimonials";
 
 const Homepage = () => {
   return (
@@ -12,6 +13,7 @@ const Homepage = () => {
       <Herohome />
       <Services />
       <Counter />
+      <Testimonials />
       <ServiceOverviewCard />
       <HowToStart />
     </>
