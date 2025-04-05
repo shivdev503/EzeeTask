@@ -34,27 +34,34 @@ const Herohome = () => {
                   ))}
                 </div>
                 <div className="content_box2">
-                  {/* <div className="search-box d-flex justify-content-center">
+                  <div className="search-box d-flex justify-content-center">
                     <select className="form-select me-4">
                       <option>What are you looking for?</option>
+                      {SERVICES.map((service) => (
+                        <option key={service.id} value={service.serviceName}>
+                          {service.serviceName}
+                        </option>
+                      ))}
                     </select>
                     <select className="form-select me-4">
                       <option>Select city</option>
+                      {CITIES.map((city) => (
+                        <option key={city.id} value={city.name}>
+                          {city.name}
+                        </option>
+                      ))}
                     </select>
                     <button className="primary_btn">Search your space</button>
-                  </div> */}
-                  <div className="services">
+                  </div>
+                  {/* <div className="services">
                     {SERVICES.map((service) => (
                       <ModalContactForm
                         btnText={service.serviceName}
                         key={service.id}
                         className="chip"
                       />
-                      // <div className="chip" key={service.id}>
-                      //   <p className="mb-0">{service.serviceName}</p>
-                      // </div>
                     ))}
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="desk_hide">

@@ -67,14 +67,28 @@ a {
 /* Hero section */
 .hero-container {
   position: relative;
+  .hero-content {
+    position: relative;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 5rem 1rem;
+    .hero-title {
+      font-size: 2.75rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+  }
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right,
-      rgba(17, 24, 39, 0.9),
-      rgba(30, 58, 138, 0.9));
+  background: linear-gradient(
+    to right,
+    rgba(17, 24, 39, 0.9),
+    rgba(30, 58, 138, 0.9)
+  );
 }
 
 .hero-image {
@@ -82,13 +96,6 @@ a {
   height: 700px;
   object-fit: cover;
   mix-blend-mode: overlay;
-}
-
-.hero-content {
-  position: relative;
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 8rem 1rem;
 }
 
 @media (min-width: 640px) {
@@ -126,12 +133,12 @@ a {
     }
     .list {
       display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-    p {
-      padding: 8px 8px;
-      font-size: 14px;
-    }
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
+      p {
+        padding: 8px 8px;
+        font-size: 14px;
+      }
     }
     .card-title {
       font-size: 20px !important;
@@ -149,13 +156,6 @@ a {
 .hero-text {
   text-align: center;
   margin-bottom: 2.5rem;
-}
-
-.hero-title {
-  font-size: 3.75rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 1.5rem;
 }
 
 .hero-subtitle {
@@ -204,7 +204,7 @@ a {
 .features-container {
   max-width: 80rem;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
 }
 
 .features-header {

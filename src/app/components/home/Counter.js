@@ -1,5 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import { FaRegStar } from "react-icons/fa";
+import { PiHandshakeLight, PiUsersThree } from "react-icons/pi";
 
 const Counter = () => {
   const [rating, setRating] = useState(0);
@@ -30,21 +32,36 @@ const Counter = () => {
         <div className="counter_box">
           <div className="row">
             <div className="col-4">
-              <div className="counter_item">
-                <h2>{rating.toFixed(1)}</h2>
-                <p>Service Rating</p>
+              <div className="counter_item d-flex justify-content-center align-items-center">
+                <div>
+                  <FaRegStar className="icon" />
+                </div>
+                <div className="ms-3">
+                  <h2>{rating.toFixed(1)}</h2>
+                  <p>Service Rating</p>
+                </div>
               </div>
             </div>
             <div className="col-4">
-              <div className="counter_item">
-                <h2>{customers.toLocaleString()}+</h2>
-                <p>Customer Globally</p>
+              <div className="counter_item d-flex justify-content-center align-items-center">
+                <div>
+                  <PiUsersThree className="icon" />
+                </div>
+                <div className="ms-3">
+                  <h2>{customers.toLocaleString()}+</h2>
+                  <p>Customer Globally</p>
+                </div>
               </div>
             </div>
             <div className="col-4">
-              <div className="counter_item">
-                <h2>{projects.toLocaleString()}+</h2>
-                <p>B2B Projects</p>
+              <div className="counter_item d-flex justify-content-center align-items-center">
+                <div>
+                  <PiHandshakeLight className="icon" />
+                </div>
+                <div className="ms-3">
+                  <h2>{projects.toLocaleString()}+</h2>
+                  <p>B2B Projects</p>
+                </div>
               </div>
             </div>
           </div>

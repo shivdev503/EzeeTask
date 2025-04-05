@@ -21,7 +21,7 @@ const Banner = () => {
   const features = [
     {
       icon: <FaRegStar className="icon" />,
-      title: "15+ Years Experience",
+      title: "5000+ Tasks Completed",
       description: "Trusted by thousands of clients",
     },
     {
