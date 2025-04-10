@@ -52,7 +52,7 @@ const HowToStart = () => {
                 layout="fill"
               />
             </div> */}
-            <h4>Service Schedule Shared</h4>
+            <h4>Service Scheduling</h4>
           </div>
           <div className="step">
             <h3>05</h3>

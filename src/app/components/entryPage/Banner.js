@@ -9,7 +9,7 @@ import {
   LuHospital,
 } from "react-icons/lu";
 import { FiHome } from "react-icons/fi";
-import { MdOutlineVilla } from "react-icons/md";
+import { MdOutlineHomeWork, MdOutlineVilla } from "react-icons/md";
 import { RiBuilding4Line } from "react-icons/ri";
 import "../../../styles/banner.scss";
 import Image from "next/image";
@@ -62,11 +62,7 @@ const Banner = () => {
           </div>
 
           <div className="service-cards">
-            <Link
-              // onClick={() => setSelectedType("b2b")}
-              href={"/commercial-services"}
-              className="service-card"
-            >
+            <Link href={"/commercial-services"} className="service-card">
               <div className="d-flex align-items-center">
                 <LuBuilding2 className="card-icon" />
                 <h2 className="card-title ms-3">Commercial Services</h2>
@@ -76,29 +72,25 @@ const Banner = () => {
               </p>
               <div className="list">
                 <p>
-                  <LuHospital className="icon" />
-                  Hospitals
-                </p>
-                <p>
                   <LuBuilding2 className="icon" />
-                  Real Estate
+                  Real Estate Developers
                 </p>
                 <p>
-                  <FaRegBuilding className="icon" />
-                  Builder Floor
+                  <LuHospital className="icon" />
+                  Hotel/Hospital
                 </p>
                 <p>
                   <LuFactory className="icon" />
                   Industries
                 </p>
+                <p>
+                  <FaRegBuilding className="icon" />
+                  Corporate/Coworking Space
+                </p>
               </div>
             </Link>
 
-            <Link
-              // onClick={() => setSelectedType("b2c")}
-              href={"/residential-services"}
-              className="service-card"
-            >
+            <Link href={"/residential-services"} className="service-card">
               <div className="d-flex align-items-center">
                 <FiHome className="card-icon" />
                 <h2 className="card-title ms-3">Residential Services</h2>
@@ -113,11 +105,15 @@ const Banner = () => {
                 </p>
                 <p>
                   <RiBuilding4Line className="icon" />
-                  Flat
+                  Apartments/Floors
                 </p>
                 <p>
                   <MdOutlineVilla className="icon" />
                   Villas
+                </p>
+                <p>
+                  <MdOutlineHomeWork className="icon" />
+                  Duplex
                 </p>
               </div>
             </Link>
