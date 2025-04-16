@@ -1,7 +1,7 @@
 @import "./variables";
 
 .herohome {
-  background-image: url("/images/top-bg.png");
+  background-image: url("/images/residentialBackground.png");
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -178,6 +178,8 @@
     .counter_item {
       .icon {
         font-size: 44px;
+        width: 2.5rem;
+        height: 2.5rem;
       }
       h2 {
         font-size: 40px;
