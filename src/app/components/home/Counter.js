@@ -31,7 +31,7 @@ const Counter = () => {
       <div className="container">
         <div className="counter_box">
           <div className="row">
-            <div className="col-4">
+            <div className="col-md-4">
               <div className="counter_item d-flex justify-content-center align-items-center">
                 <div>
                   <FaRegStar className="icon" />
@@ -42,7 +42,7 @@ const Counter = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4">
+            <div className="col-md-4 mt-4 mt-md-0 mb-4 mb-md-0">
               <div className="counter_item d-flex justify-content-center align-items-center">
                 <div>
                   <PiUsersThree className="icon" />
@@ -53,7 +53,7 @@ const Counter = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4">
+            <div className="col-md-4">
               <div className="counter_item d-flex justify-content-center align-items-center">
                 <div>
                   <PiHandshakeLight className="icon" />

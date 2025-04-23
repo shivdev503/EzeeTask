@@ -1,16 +1,33 @@
 @import "./variables";
 
 .herohome {
-  background-image: url("/images/residentialBackground.png");
+  // background-image: url("/images/residentialBackground.png");
   height: 100vh;
   width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  // background-size: cover;
+  // background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-position: 50%;
+  // background-position: 50%;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/residentialBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    opacity: 0.2;
+    /* adjust this value */
+    z-index: -1;
+  }
 
   .best {
     font-size: 1.5rem;
@@ -27,6 +44,7 @@
       color: $primary-color;
     }
   }
+
   .inner_content_box {
     background-color: #fff;
     border: 1px solid rgba(33, 37, 41, 0.1);
@@ -36,6 +54,7 @@
     padding: 25px 25px 80px;
     width: 70%;
     position: relative;
+
     .city_box {
       display: flex;
       justify-content: center;
@@ -50,6 +69,7 @@
       top: -70px;
       left: 50%;
       transform: translateX(-50%);
+
       .city-item {
         p {
           margin-bottom: 0;
@@ -58,12 +78,14 @@
         }
       }
     }
+
     .content_box2 {
       align-items: center;
       display: flex;
       height: 100%;
       justify-content: space-evenly;
       margin-top: 70px;
+
       .services {
         width: 100%;
         display: flex;
@@ -72,9 +94,11 @@
         gap: 15px;
         margin-top: 0;
         padding: 0;
+
         &::-webkit-scrollbar {
           display: none;
         }
+
         .chip {
           background-color: #fff;
           border: 1px solid rgba(33, 37, 41, 0.1);
@@ -86,28 +110,34 @@
           color: $heading-color;
           cursor: pointer;
           transition: all 0.3s ease-in-out;
+
           &:hover {
             background-color: $background-color;
           }
         }
       }
+
       .form-select {
         width: 320px;
       }
     }
   }
 }
+
 .services {
   margin-top: 0;
   padding: 10px 0;
+
   .box {
     display: flex;
     gap: 15px;
     flex-wrap: nowrap;
     overflow-x: auto;
+
     &::-webkit-scrollbar {
       display: none;
     }
+
     .service_box {
       width: 190px;
       background-color: #fff;
@@ -121,6 +151,7 @@
       padding: 10px;
       min-height: 162px;
       flex-shrink: 0;
+
       h4 {
         font-size: 15px;
         font-weight: 500;
@@ -128,6 +159,7 @@
         margin-top: 8px;
         text-transform: capitalize;
       }
+
       .icon {
         width: 70px;
         height: 70px;
@@ -141,13 +173,16 @@
   padding: 10px !important;
   color: #888888 !important;
   cursor: pointer;
+
   &:focus {
     outline: none !important;
     box-shadow: none !important;
   }
 }
+
 .services_overview {
   padding: 100px 0;
+
   .overview_img {
     position: relative;
     width: 100%;
@@ -155,9 +190,11 @@
     border-radius: 15px;
     overflow: hidden;
   }
+
   .carousel-indicators {
     bottom: -30px;
     margin-bottom: 0;
+
     button {
       width: 10px;
       height: 10px;
@@ -169,23 +206,27 @@
 
 .counter {
   padding: 100px 0;
+
   .counter_box {
     background-color: $background-color;
     border: 1px solid rgba(33, 37, 41, 0.1);
     border-radius: 20px;
     box-shadow: 0 0 12px -5px rgba(0, 0, 0, 0.1);
     padding: 40px;
+
     .counter_item {
       .icon {
         font-size: 44px;
         width: 2.5rem;
         height: 2.5rem;
       }
+
       h2 {
         font-size: 40px;
         font-weight: 600;
         color: $heading-color;
       }
+
       p {
         font-size: 15px;
         margin-bottom: 0;
@@ -197,10 +238,12 @@
 .how_to_start {
   padding: 100px 0;
   background-color: $background-color;
+
   .steps {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     .step {
       width: 19%;
       padding: 20px;
@@ -208,17 +251,20 @@
       border-radius: 14px;
       box-shadow: 0 0 12px -5px rgba(0, 0, 0, 0.1);
       min-height: 183px;
+
       h3 {
         font-size: 60px;
         font-weight: 700;
         color: $heading-color;
         opacity: 0.2;
       }
+
       h4 {
         font-size: 18px;
         font-weight: 600;
         margin-top: 18px;
       }
+
       .icon {
         position: relative;
         width: 80%;
@@ -226,9 +272,11 @@
         margin: auto;
       }
     }
+
     .step:nth-child(even) {
       background-color: #f3f4f6;
     }
+
     .step:nth-child(odd) {
       background-color: #fff;
     }
@@ -238,19 +286,23 @@
 .testimonials {
   padding: 100px 0;
   background-color: $background-color;
+
   .slick-dots {
     bottom: -40px !important;
+
     li {
       background: #abcffa;
       border-radius: 50%;
       height: 12px;
       margin: 0 5px;
       width: 12px;
+
       &.slick-active {
         background: $primary-color;
       }
     }
   }
+
   .my_card {
     border: 1px solid rgba(33, 37, 41, 0.1);
     box-shadow: 0 0 12px -5px rgba(0, 0, 0, 0.1);
@@ -260,6 +312,7 @@
     margin-top: 35px;
     min-height: 298px;
     background-color: #fff;
+
     .quote_icon {
       position: absolute;
       width: 45px;
@@ -274,20 +327,24 @@
       font-size: 30px;
       color: #fff;
     }
+
     .content {
       .review_text {
         font-size: 16px;
         margin-top: 20px;
       }
+
       .stars {
         text-align: right;
         margin-top: 10px;
+
         .icon {
           font-size: 20px;
           color: $primary-color;
           margin: 0 6px;
         }
       }
+
       .circle {
         background-color: $background-color;
         width: 80px;
@@ -296,6 +353,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
         .dp {
           width: 90%;
           height: 90%;
@@ -305,14 +363,17 @@
           overflow: hidden;
         }
       }
+
       .name {
         margin-left: 20px;
+
         p {
           font-size: 20px;
           font-weight: 600;
           margin-bottom: 0px;
           color: $heading-color;
         }
+
         .post {
           font-size: 16px;
           font-weight: 500;
@@ -328,82 +389,120 @@
     background-image: none;
     background: $gradient;
     height: 612px;
+
     .banner_search {
       padding-top: 72px;
+
       h1 {
         font-size: 26px;
       }
     }
+
     .city_box {
       flex-wrap: nowrap;
       gap: 20px;
       overflow-x: auto;
+
       .city-item {
         p {
           font-size: 12px;
         }
       }
     }
+
     .content_box2 {
       width: 100%;
       margin-top: 50px;
       margin-bottom: 50px;
+
       .search-box {
         flex-wrap: wrap;
         gap: 15px;
+
         .form-select {
           width: 100%;
           margin-right: 0 !important;
           font-size: 12px;
         }
+
         button {
           width: 100%;
         }
       }
     }
   }
+
   .services {
     margin-top: 0;
+
     .box {
       .service_box {
         width: 140px;
+
         .icon {
           width: 56px;
           height: 65px;
         }
+
         h4 {
           font-size: 13px;
         }
       }
     }
   }
+
   .counter {
     padding: 50px 0 20px;
+
     .counter_box {
       padding: 20px;
       border-radius: 10px;
-      .counter_item {
-        h2 {
-          font-size: 26px;
+
+      .row {
+        .col-md-4 {
+          &>div {
+            justify-content: flex-start !important;
+          }
         }
+      }
+
+      .counter_item {
+        gap: 10px;
+
+        .icon {
+          width: 2rem;
+          height: 2rem;
+        }
+
+        h2 {
+          font-size: 14px;
+          margin-bottom: 0px;
+        }
+
         p {
-          font-size: 12px;
-          margin-bottom: 0;
+          // font-size: 12px;
+          // margin-bottom: 0;
+          // display: none;
         }
       }
     }
   }
+
   .services_overview {
     padding: 50px 0;
+
     .overview_img {
       height: 195px;
     }
   }
+
   .how_to_start {
     padding: 50px 0;
+
     .steps {
       display: none;
     }
+
     .step {
       padding: 10px;
       border: 1px solid rgba(33, 37, 41, 0.1);
@@ -411,17 +510,20 @@
       box-shadow: 0 0 12px -5px rgba(0, 0, 0, 0.1);
       min-height: 183px;
       height: 100%;
+
       h3 {
         font-size: 60px;
         font-weight: 700;
         color: $heading-color;
         opacity: 0.2;
       }
+
       h4 {
         font-size: 16px;
         font-weight: 600;
         margin-top: 18px;
       }
+
       .icon {
         position: relative;
         width: 80%;
@@ -429,15 +531,60 @@
         margin: auto;
       }
     }
+
     .step2 {
       min-height: 0;
       padding: 10px;
+
       h3 {
         font-size: 40px;
         margin-bottom: 0;
       }
+
       h4 {
         margin-top: 0;
+      }
+    }
+  }
+
+  .testimonials {
+    padding: 50px 0;
+
+    p {
+      font-size: 13px;
+    }
+
+    .my_card {
+      margin-right: 0;
+      min-height: 272px;
+
+      .quote_icon {
+        width: 30px;
+        height: 30px;
+        right: 37px;
+        top: -14px;
+        font-size: 16px;
+      }
+
+      .content {
+        .circle {
+          width: 60px;
+          height: 60px;
+        }
+
+        .name {
+          p {
+            font-size: 16px;
+          }
+
+          .post {
+            font-size: 14px;
+          }
+        }
+
+        .review_text {
+          font-size: 13px;
+        }
       }
     }
   }
