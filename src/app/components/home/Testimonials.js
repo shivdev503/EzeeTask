@@ -147,6 +147,46 @@ const Testimonials = () => {
             ))}
           </Slider>
         </div>
+        <div className="desk_hide">
+        <div className="row overflow_row">
+        {reviews.map((review) => (
+              <div className="col-10" key={review.id}>
+                <div className="my_card position-relative">
+                  <div className="quote_icon">
+                    <LuQuote className="icon" />
+                  </div>
+                  <div className="content">
+                    <div className="content_header d-flex align-items-center justify-content-between">
+                      <div className="d-flex align-items-center">
+                        <div className="circle">
+                          <div className="dp">
+                            <Image
+                              src={"/images/dp1.jpeg"}
+                              alt={review.name}
+                              layout="fill"
+                            />
+                          </div>
+                        </div>
+                        <div className="name">
+                          <p>{review.name}</p>
+                          <p className="post">Marketing Director</p>
+                        </div>
+                      </div>
+                    </div>
+                    <p className="review_text">{review.review}</p>
+                    {/* <div className="stars">
+                      <FaStar className="icon" />
+                      <FaStar className="icon" />
+                      <FaStar className="icon" />
+                      <FaStar className="icon" />
+                      <FaStar className="icon" />
+                    </div> */}
+                  </div>
+                </div>
+              </div>
+            ))}
+        </div>
+        </div>
       </div>
     </section>
   );

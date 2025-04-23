@@ -106,6 +106,12 @@ a {
 }
 
 @media (max-width: 480px) {
+  .features-container {
+    padding: 50px 0 !important;
+  }
+  .hero-text {
+    margin-top: 2rem;
+  }
   .hero-title {
     font-size: 26px !important;
     margin-bottom: 16px !important;
@@ -124,6 +130,7 @@ a {
   }
 
   .page-container .service-cards .service-card {
+    padding: 10px 15px;
     .card-icon {
       width: 2rem !important;
       height: 2rem !important;
@@ -136,8 +143,9 @@ a {
       grid-template-columns: repeat(2, 1fr);
       gap: 5px;
       p {
-        padding: 8px 8px;
-        font-size: 14px;
+        padding: 5px 8px;
+        font-size: 13px;
+        line-height: 20px;
       }
     }
     .card-title {

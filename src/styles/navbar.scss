@@ -56,3 +56,9 @@
     background-color: #fff;
   }
 }
+
+@media (max-width: 480px) {
+  .navbar-collapse {
+   display: none;
+  }
+}

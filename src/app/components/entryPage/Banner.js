@@ -47,7 +47,7 @@ const Banner = () => {
         <div className="hero-overlay">
           <div className="hero-image">
             <Image
-              src="/images/entry-banner-img.avif"
+              src="/images/EzeeTaskBackground.png"
               alt="Modern architecture"
               layout="fill"
             />
